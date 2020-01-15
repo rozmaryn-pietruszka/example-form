@@ -1,0 +1,122 @@
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+h1, p {
+  margin: 0;
+  padding: 0;
+}
+#survey {
+  width: 100%;
+  height: 100%;
+  background: url(https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ) no-repeat center;
+  backgroung-size: contain;
+  overflow: auto;
+}
+#center {
+  padding: 10px;
+  text-align: center;
+  color: rgb(0,0,0);
+  text-shadow: 0 0 3px rgb(245,245,245);
+}
+#title {
+  font-size: 3em;
+}
+#description {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#forms-section {
+  margin:  2% 20%;
+  padding: 2%;
+  width: 60%;
+  background: rgba(10,10,10,0.8);
+  border-radius: 10px;
+}
+#name, #email, #number {
+  width: 98%;
+  padding: 1%;
+  margin-top: 0.5%;
+  margin-bottom: 2%;
+  border: rgb(0,0,0);
+  font-size: 1em;
+}
+#name:focus, #email:focus, #number:focus{
+  outline: none;
+  box-shadow: 0 0 5px rgb(245,245,245);
+}
+#survey-form label {
+  font-size: 1.2em;
+  color: rgb(245,245,245);
+}
+#survey-form h3 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: normal;
+  color: rgb(245,245,245);
+}
+#dropdown {
+  width: 100%;
+  padding: 1%;
+  margin-top: 0.5%;
+  margin-bottom: 2%;
+  border: rgb(0,0,0);
+  font-size: 1em;
+  color: rgb(10,10,10);
+}
+#dropdown:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgb(245,245,245);
+}
+#survey-form p {
+  margin: 1%;
+  font-size: 1em;
+  color: rgb(245,245,245);
+}
+#answer {
+  width: 98%;
+  height: 130px;
+  margin-top: 0.5%;
+  margin-bottom: 2%;
+  padding: 1%;
+  border: rgb(10,10,10);
+  font-family: Verdana, sens-serif;
+  font-size: 1em;
+  resize: none;
+}
+#answer:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgb(245,245,245);
+}
+#submit {
+  padding: 10px 30px;
+  background: rgb(255,255,255);
+  border: 1px solid rgb(0,0,0);
+  font-size: 1em;
+  font-weight: bold;
+  color: rgb(0,0,0);
+  cursor: pointer;
+  transition: background .5s, color .5s, border .5s, box-shadow .5s;
+}
+#submit:hover {
+  background: rgb(10,10,10);
+  color: rgb(245,245,245);
+  border: 1px solid rgb(255,255,255);
+  box-shadow: 0 0 3px rgb(245,245,245);
+}
+#submit:focus {
+  outline: none;
+}
+@media (max-width: 780px) {
+  #title {
+    font-size: 2.5em;
+  }
+  #forms-section {
+    margin:  2% 5%;
+    width: 85%;
+  }
+}

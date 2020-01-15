@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <section id="survey">
+      <div id="center">
+        <h1 id="title">Physical activity survey form</h1>
+        <p id="description">Thank you for taking the time to help us gather information about physical activity our community.</p> 
+      </div>
+      <div id="forms-section">
+        <form id="survey-form">
+          <label for="name" id="name-label"> Name</label>
+          <input type="text" maxlength="15" placeholder="Name" id="name" required>
+          <label for="email" id="email-label">E-mail adress</label>
+          <input type="email" maxlength="150" placeholder="E-mail adress" id="email" required>
+          <label for="number" id="number-label">Year of birth</label>
+          <input type="number" min="1919" max="2019" placeholder="Year of birth" id="number">
+                    <h3>How often you do physical activity?</h3>
+          <select id="dropdown">
+            <option>never</option>
+            <option> a few times a year</option>
+            <option> ones a month </option>
+            <option> a few times a month</option>
+            <option> a few times a week</option>
+          </select>
+          <h3> Sex </h3>
+          <p><input type="radio" name="sex" value="male"> male</p>
+          <p><input type="radio" name="sex" value="femal"> female</p>
+          <h3>Your favorite physical activity</h3>
+          <p><input type="checkbox" value="jogging"> jogging</p>
+          <p><input type="checkbox" value="walking"> walking</p>
+          <p><input type="checkbox" value="nordic-walking"> nordic walking</p>
+          <p><input type="checkbox" value="cycling"> cycling</p>
+          <p><input type="checkbox" value="football"> football</p>
+          <p><input type="checkbox" value="basketball"> basketball</p>
+          <p><input type="checkbox" value="baseball"> baseball</p>
+          <p><input type="checkbox" value="tennis"> tennis</p>
+          <p><input type="checkbox" value="swimming"> swimming</p>
+          <p><input type="checkbox" value="diving"> diving</p>
+          <p><input type="checkbox" value="gymnastic"> gimnastic</p>
+          <p><input type="checkbox" value="fitness"> fitness</p>
+          <p><input type="checkbox" value="climbing"> climbing</p>
+          <p><input type="checkbox" value="hiking"> hiking</p>
+          <h3>How do you feel after physical activity?</h3>
+          <textarea maxlength="800" placeholder="Describe your mood" id="answer"></textarea>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
